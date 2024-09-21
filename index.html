@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description"
+    content="Midterm Website Portfolio for Multimedia System">
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3FM96129M');
+  </script>
+
+  <title>Kim Villanueva | Portfolio</title>
+</head>
+
+<body>
+  <a href="#main" class="skip-to-main-content">Skip to main content</a>
+  <header>
+    <div class="fixed-header animate-background">
+      <div class="container header-container">
+        <div class="logo-container">
+          <span class="logo animate-logo" role="heading" aria-level="1">Kim Cyruz Villanueva</span>
+        </div>
+        <div class="header-text">
+          <h1 role="heading" aria-level="2">
+            <p class="animate-text-1">BSIT Student From <span style="color: gold;">National </span> <span style="color: blue;">University</span> Lipa</p>
+          </h1>
+        </div>
+        <h2 class="animate-subtitle" role="heading" aria-level="3">
+          Aspiring full stack web developer eager to build dynamic applications in the future.
+        </h2>
+        <button class="scroll-button animate-scroll" tabindex="0">
+          <span class="arrow">↓</span> scroll
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <a href="/" class="nav-logo" title="Back to Homepage">
+        My Portfolio
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="link active">about</a>
+        <a href="projects.html" class="link">projects</a>
+        <div class="social-media">
+          <a href="#" title="Github">
+            <i class="demo-icon icon-github-circled" aria-hidden="true"></i>
+            <span class="#">Github</span>
+          </a>
+          <a href="#" title="Twitter">
+            <i class="demo-icon icon-twitter" aria-hidden="true"></i>
+            <span class="visually-hidden">Twitter</span>
+          </a>
+          <a href="#" title="Medium">
+            <i class="demo-icon icon-medium" aria-hidden="true"></i>
+            <span class="visually-hidden">Medium</span>
+          </a>
+          <a href="#" title="Codepen">
+            <i class="demo-icon icon-codeopen" aria-hidden="true"></i>
+            <span class="visually-hidden">Codepen</span>
+          </a>
+          <a href="#" title="LinkedIn">
+            <i class="demo-icon icon-linkedin" aria-hidden="true"></i>
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" title="Select a color scheme" class="control">
+          <i aria-hidden="true" class="demo-icon icon-cog"></i>
+          <span class="visually-hidden">Select a color scheme</span>
+        </button>
+      </div>
+
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Neon
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section id="about">
+      <div class="container inner-container">
+        <div class="intro scroll-in">
+          <h2 class="section-title">Hello, I'm Kim Cyruz Villanueva <span class="title-icon">&#128578;</span></h2>
+          <div class="section-subtitle">
+              I'm an IT student at National University Lipa.</p>
+            <p>
+              I've been passionate about coding and technology for as long as I can remember, and I love creating dynamic web
+              applications.
+            </p>
+            <p>
+              I'm excited to learn more and contribute to the tech community as I work toward my goal of becoming a full-stack
+              developer.
+            </p>
+          </div>
+          <div class="section-link">
+            <a href="about.html" class="link-btn">More About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="index-footer">
+    <div class="container">
+      <div class="social-media">
+        <a href="#" title="Github">
+                      <i class="demo-icon icon-github-circled" aria-hidden="true"></i>
+            <span class="visually-hidden">Github</span>
+        </a>
+        <a href="#" title="Twitter">
+          <i class="demo-icon icon-twitter" aria-hidden="true"></i>
+          <span class="visually-hidden">Twitter</span>
+        </a>
+        <a href="#" title="Medium">
+          <i class="demo-icon icon-medium" aria-hidden="true"></i>
+          <span class="visually-hidden">Medium</span>
+        </a>
+        <a href="#" title="Codepen">
+          <i class="demo-icon icon-codeopen" aria-hidden="true"></i>
+          <span class="visually-hidden">Codepen</span>
+        </a>
+        <a href="#" title="LinkedIn">
+          <i class="demo-icon icon-linkedin" aria-hidden="true"></i>
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; designed & built by <a href="https://www.jemimaabu.com">Kim Cyruz Villanueva</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+<script src="./static/js/landing-page.js"></script>
+
+</html>
